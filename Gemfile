@@ -32,6 +32,9 @@ gem 'devise'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
+#paperclip gem for uploading photos
+gem "paperclip", "~> 4.2"
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
