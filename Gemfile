@@ -32,7 +32,7 @@ gem 'devise'
 # gem 'unicorn'
 
 #gem used for searching
-gem 'searchkick'
+#gem 'searchkick'
 
 #paperclip gem for uploading photos
 gem "paperclip", "~> 4.2"
