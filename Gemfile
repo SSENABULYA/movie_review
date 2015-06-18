@@ -31,6 +31,9 @@ gem 'devise'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
+#gem'jquery_mobile_rails'
+#gem 'jquery_mobile_rails'
+
 #gem used for searching
 #gem 'searchkick'
 
