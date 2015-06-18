@@ -2,11 +2,6 @@
 	<div class="container">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapses" data-toggle ="collapse" data-target = "bs-example-navbar-collapse-1">
-
-			<span class ="sr-only">Toggle navigation</span>	
-			<span class ="icon-bar"></span>
-			<span class ="icon-bar"></span>
-			<span class ="icon-bar"></span>
 			</button>
 			<%= link_to "Movie reviews", root_path, class: "navbar-brand" %>		
 		</div>
@@ -15,7 +10,9 @@
 			<ul class="nav navbar-nav">
 				<% if user_signed_in? %>
 					<li><%= link_to 'new Movie',  new_movie_path, class: "active"%></li>
-					<li><%= link_to "Account",  edit_user_registration_path %></li>
+					<li><%= link_to "Account",  edit_user_registration_path %>
+					<!--<p> Logged in as <strong><%= current_user.email%></strong></p>-->
+					<li class="round-image-50"><%= image_tag(current_user.avatar.url(:thumb)) %></li>
 					<li><%= link_to "Logout",  destroy_user_session_path, method: :delete %></li>
 				<% else %>
 					<li><%= link_to 'Login', new_user_session_path %></li>
