@@ -17,9 +17,13 @@
  @import "bootstrap";
  @import "utilities";
 
- body{
- background-color: white;
- }
+ body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
 
 .round-image-50 {
     background-color: white;
@@ -35,10 +39,10 @@
 }
 
 
- .review_title{
+.review_title{
  	margin: 0 0 20px 0;
  }
- .reviews{
+.reviews{
  	padding: 15px 0;
  	border-bottom: 1px solid #EAEAEA;
  	.star-rating{
@@ -48,8 +52,35 @@
 
 .form-item {
     color: #888;
-    background: #F9F9F9 none repeat scroll 0% 0%;
-    border: 1px solid #D4D4D4;
+    background: #F9F9F9;
+    border: 10% solid #D4D4D4;
     box-shadow: -1px 1px #F2F2F2;
-    padding: 7px 10px 9px;
+    padding: 5%;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
+}
+
+fieldset {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove #DBE9F4;
+    width: 20%;
+    background-color: #DBE9F4;
+
+} 
+
+legend{
+  color: black;
+  width: 60%;
+  margin-top:10%;
+  margin-left: 20%;
+}
+form{
+  
 }

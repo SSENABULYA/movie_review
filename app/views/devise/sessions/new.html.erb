@@ -1,18 +1,16 @@
- <div class="row">
-  <div class="col-md-6 col-md-offset-4">
+
 
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
     <div class="container">
-      <form>
-        <fieldset>
-          <legend><h2>Login</h2></legend>
+      <div class ="form-item">
+          <h2>User Login</h2>
             <div class="field">
               <%= f.label "Username or Email" %><br />
-              <%= f.text_field :login %></div>
+              <%= f.text_field :login, placeholder: "Enter Username or Email" %></div>
             <div class="field">
               <%= f.label :password %><br />
-              <%= f.password_field :password, autocomplete: "off" %>
+              <%= f.password_field :password, autocomplete: "off", placeholder: "Enter password" %>
             </div>
 
             <% if devise_mapping.rememberable? -%>
@@ -26,9 +24,6 @@
             </div>
           <% end %>
           <p> New user? <%= render "devise/shared/links" %></p>
-        </fieldset>
         
-      </form>
+      </div>
     </div>
-  </div>
-</div>
